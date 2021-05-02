@@ -33,13 +33,9 @@ shinyServer(function(input,output){
   # })
   
   # This is to test the visulize the html file
-   getPage <- function(){
-     file1 <- input$file
-     print(file1$datapath)
-     return(includeHTML(file1$datapath))
-   }
-   
-   output$html <- renderUI({getPage()})
+  output$showhtml <- renderUI({Sys.sleep(2);
+     includeHTML("/hewenjun/rstudio_work/zhenweipeng_version2/only-miR-continus/RFS/RFS_survival_analysis.nb.html")
+   })
   
   # # the following renderUI is used to dynamically generate the tabsets when the file is loaded. Until the file is loaded, app will not show the tabset.
   # output$tb <- renderUI({

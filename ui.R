@@ -14,9 +14,7 @@ shinyUI(fluidPage(
     ),
     mainPanel(
       # uiOutput("tb")
-      # htmlOutput("html")
-      includeHTML("/hewenjun/rstudio_work/zhenweipeng_version2/only-miR-continus/RFS/RFS_survival_analysis.nb.html")
-      
+      htmlOutput("showhtml")
       # use below code if you want the tabset programming in the main panel. If so, then tabset will appear when the app loads for the first time.
       #       tabsetPanel(tabPanel("Summary", verbatimTextOutput("sum")),
       #                   tabPanel("Data", tableOutput("table")))
